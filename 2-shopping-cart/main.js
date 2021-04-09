@@ -17,8 +17,6 @@ const bannanaPrice=1.03;
 let counterValueCherries=0;
 const cherriesPrice=7.98;
 
-const total=document.getElementById('total');
-
 
 buttonPlusApple.addEventListener('click',moreApple);
 buttonMinusApple.addEventListener('click',lessApple);
@@ -26,6 +24,10 @@ buttonPlusBannana.addEventListener('click',moreBannana);
 buttonMinusBannana.addEventListener('click',lessBannana);
 buttonPlusCherries.addEventListener('click',moreCherries);
 buttonMinusCherries.addEventListener('click',lessCherries);
+
+function total(){
+    document.getElementById("total").innerHTML = counterValueApple*applePrice +cherriesPrice*counterValueCherries+counterValueBannana*bannanaPrice;
+} 
 
 function moreApple(){
     counterValueApple++;
@@ -37,7 +39,7 @@ function moreApple(){
     else{
         counterApple.innerHTML=counterValueApple+' articles';  
     }
-document.getElementById("total").innerHTML = counterValueApple*applePrice +cherriesPrice*counterValueCherries+counterValueBannana*bannanaPrice;
+    total();
 }
 
 
@@ -54,7 +56,7 @@ function lessApple(){
     else{
         counterApple.innerHTML=counterValueApple+' articles';
     }
-    document.getElementById("total").innerHTML = counterValueApple*applePrice +cherriesPrice*counterValueCherries+counterValueBannana*bannanaPrice;
+    total();
  
 }
 
@@ -68,7 +70,7 @@ function moreBannana(){
     else{
         counterBannana.innerHTML=counterValueBannana+' articles';  
     }
-    document.getElementById("total").innerHTML = counterValueApple*applePrice +cherriesPrice*counterValueCherries+counterValueBannana*bannanaPrice;
+    total();
   
 }
 
@@ -86,7 +88,7 @@ function lessBannana(){
     else{
         counterBannana.innerHTML=counterValueBannana+' articles';
     }
-    document.getElementById("total").innerHTML = counterValueApple*applePrice +cherriesPrice*counterValueCherries+counterValueBannana*bannanaPrice;
+    total();
     
 }
 
@@ -100,7 +102,7 @@ function moreCherries(){
     else{
         counterCherries.innerHTML=counterValueCherries+' articles';  
     }
-    document.getElementById("total").innerHTML = counterValueApple*applePrice +cherriesPrice*counterValueCherries+counterValueBannana*bannanaPrice;
+    total();
     
 }
 
@@ -118,6 +120,6 @@ function lessCherries(){
     else{
         counterCherries.innerHTML=counterValueCherries+' articles';
     }
-    document.getElementById("total").innerHTML = counterValueApple*applePrice +cherriesPrice*counterValueCherries+counterValueBannana*bannanaPrice;
+    total();
    
 }
