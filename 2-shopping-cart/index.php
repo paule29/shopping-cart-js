@@ -11,21 +11,21 @@
 <body>
     <p> <span>Pommes (au kg) : </span>
 
-        <button id="minusApple">-</button>
-        <button id="plusApple">+</button>
+        <button id="lessApple">-</button>
+        <button id="moreApple">+</button>
         <span id="counterApple">0</span>
     </p>
     <p> <span>Bannane (au kg) : </span>
 
-        <button id="minusBannana">-</button>
-        <button id="plusBannana">+</button>
+        <button id="lessBannana">-</button>
+        <button id="moreBannana">+</button>
         <span id="counterBannana">0</span>
 
     </p>
     <p> <span>Cerises (au kg) : </span>
 
-        <button id="minusCherries">-</button>
-        <button id="plusCherries">+</button>
+        <button id="lessCherries">-</button>
+        <button id="moreCherries">+</button>
         <span id="counterCherries">0</span>
     </p>
 
