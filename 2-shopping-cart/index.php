@@ -9,25 +9,7 @@
 </head>
 
 <body>
-    <p> <span>Pommes (au kg) : </span>
-
-        <button id="lessApple">-</button>
-        <button id="moreApple">+</button>
-        <span id="counterApple">0</span>
-    </p>
-    <p> <span>Bannane (au kg) : </span>
-
-        <button id="lessBannana">-</button>
-        <button id="moreBannana">+</button>
-        <span id="counterBannana">0</span>
-
-    </p>
-    <p> <span>Cerises (au kg) : </span>
-
-        <button id="lessCherries">-</button>
-        <button id="moreCherries">+</button>
-        <span id="counterCherries">0</span>
-    </p>
+   <div id="list"></div>
 
 
 
